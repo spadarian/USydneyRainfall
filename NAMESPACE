@@ -1,0 +1,5 @@
+export(get_closest)
+export(get_metadata)
+export(get_refdata)
+importFrom(RCurl,getURL)
+importFrom(RJSONIO,fromJSON)

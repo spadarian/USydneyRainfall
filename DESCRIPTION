@@ -1,0 +1,20 @@
+Package: USydneyRainfall
+Type: Package
+Title: Better Rainfall Forecast for Grain Growers API connection
+Version: 0.1
+Authors@R: c(person("José", "Padarian", role = c("aut", "cre"),
+    email="jose.padarian@sydney.edu.au"))
+Author: José Padarian
+Maintainer: José Padarian <jose.padarian@sydney.edu.au>
+Description: Better Rainfall Forecast for Grain Growers API connection
+License: GPL-3
+Depends:
+    R (>= 2.14.0)
+Imports:
+    RCurl,
+    RJSONIO
+Collate:
+    'get_closest.R'
+    'get_metadata.R'
+    'get_refdata.R'
+    'utils.R'
