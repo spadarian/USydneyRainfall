@@ -16,5 +16,8 @@ Imports:
 Collate:
     'get_closest.R'
     'get_metadata.R'
-    'get_refdata.R'
     'utils.R'
+    'get_intersect.R'
+    'get_raindata.R'
+    'list_stations.R'
+    'rainfall_login.R'

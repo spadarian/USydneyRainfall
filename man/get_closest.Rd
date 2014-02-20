@@ -3,7 +3,7 @@
 \title{Better Rainfall Forecast for Grain Growers API connection}
 \usage{
   get_closest(station_id, single = F, dist = 0.5,
-    overlap = 365L)
+    overlap = 365L, max_st = 10)
 }
 \arguments{
   \item{station_id}{ID of the farm station.}
@@ -18,6 +18,8 @@
 
   \item{overlap}{integer representing record date overlap
   between the farm station and the BoM station (days).}
+
+  \item{max_st}{maximum number of stations.}
 }
 \value{
   \code{data.frame}
