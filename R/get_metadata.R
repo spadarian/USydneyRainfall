@@ -16,7 +16,8 @@ get_metadata <- function(station_id, type='ref') {
       ans <- fromJSON(json,simplify=T)$data
       loc <- t(sapply(ans,`[[`,'location'))
       rest <- lapply(ans, function(x) {x$location <- NULL; x})
-      cbind(rbindList(rest),loc)[,c('id','code','name','latitude','longitude','hq')]
+      if (type=='ref') cbind(rbindList(rest),loc)[,c('id','code','name','latitude','longitude','hq')]
+      if (type=='st') cbind(rbindList(rest),loc)[,c('id','name','latitude','longitude')]
     })
     rbindList(response)
   }
